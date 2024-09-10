@@ -1,4 +1,4 @@
-import express, { Application } from "express";
+import express, { Request, Response, Application, NextFunction } from "express";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -12,6 +12,10 @@ export interface RequestUser {
   email: string;
 }
 //GLOBAL REQUEST USER TYPE
+
+app.get("/", (req: Request, res: Response, next: NextFunction) => {
+  return res.send("Works🔥🔥🔥🔥🔥");
+});
 
 const start = async () => {
   try {
