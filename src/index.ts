@@ -1,10 +1,16 @@
 import express, { Request, Response, Application, NextFunction } from "express";
+import router from "./routes";
 import dotenv from "dotenv";
+import connectDB from "./database/connect";
 dotenv.config();
 
 const app: Application = express();
+const port = process.env.PORT || 8003;
+
+connectDB();
+
 app.use(express.json());
-const port = process.env.PORT || 5003;
+app.use(router);
 
 //GLOBAL REQUEST USER TYPE
 export interface RequestUser {
