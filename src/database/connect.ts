@@ -1,6 +1,8 @@
+import dotenv from "dotenv";
 import mysql from "mysql";
-const connection = mysql.createConnection({
-  port: process.env.PORT ? parseInt(process.env.PORT) : 3306,
+dotenv.config();
+
+export const connection = mysql.createConnection({
   host: process.env.DATABASE_HOST,
   user: process.env.DATABASE_USERNAME,
   password: process.env.DATABASE_PASSWORD,
@@ -8,13 +10,14 @@ const connection = mysql.createConnection({
 });
 
 const connectDB = () => {
-  // connection.connect(function (err) {
-  //   if (err) {
-  //     console.error("error connecting: " + err.stack);
-  //     return;
-  //   }
-  //   console.log("connected as id " + connection.threadId);
-  // });
+  connection.connect(function (err) {
+    if (err) {
+      console.error("error connecting: " + err.stack);
+      return;
+    }
+
+    console.log("connected as id " + connection.threadId);
+  });
 };
 
 export default connectDB;
