@@ -10,6 +10,9 @@ router.get("/", async (req: Request, res: Response, next: NextFunction) => {
         if (error) throw error;
         // PERFORM ACTIONS WITH QUERY HERE
         return res.send(results);
+        // analyze results
+        // analyzeedResult -> html inject -> pdf buffer_ puppter ->  pdf
+
         // PERFORM ACTIONS WITH QUERY HERE
       }
     );
