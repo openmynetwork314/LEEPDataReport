@@ -1,3 +1,5 @@
 node_modules
 .env
 dist
+output.pdf
+src/lib/resources/chapter1/images

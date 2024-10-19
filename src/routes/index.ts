@@ -1,5 +1,5 @@
 import express from "express";
-import reportRouter from "./report.routes";
+import reportRouter from "./report/report.routes";
 
 const router = express.Router();
 

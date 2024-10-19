@@ -1,28 +1,31 @@
 import express, { Request, Response, NextFunction } from "express";
-import { connection } from "../database/connect";
-import { week1All, week1Filter } from "../queries/week1";
-import week2 from "../queries/week2";
-import week3 from "../queries/week3";
-import week4 from "../queries/week4";
-import { SurveyResponse } from "../types/surveyResponse";
+import { connection } from "../../database/connect";
+import fs from "fs";
+import { week1All, week1Filter } from "../../queries/week1";
+import week2 from "../../queries/week2";
+import week3 from "../../queries/week3";
+import week4 from "../../queries/week4";
+import { SurveyResponse } from "../../types/surveyResponse";
 import {
   week1Question1Responses,
   calculateAverageConfidence,
   week1Question5Responses,
-} from "../controllers/week1Controller";
-import { runQuery } from "../controllers/commonController";
+} from "../../controllers/week1Controller";
+import { runQuery } from "../../controllers/commonController";
 import {
   week2Question1Responses,
   week2Question2Responses,
   week2Question6Responses,
-} from "../controllers/week2Controller";
+} from "../../controllers/week2Controller";
 import {
   week4Question1Responses,
   week4Question2Responses,
   week4Question5Responses,
   week4Question3Responses,
   week4Question4Responses,
-} from "../controllers/week4Controller";
+} from "../../controllers/week4Controller";
+import { pdfGenerate } from "../../infra/pdf/pdfGenerate";
+import { chapterOneDocumentGenerator } from "./helpers/ChapterOneDocumentGenerator";
 
 const router = express.Router();
 
@@ -86,7 +89,18 @@ router.get("/", async (req: Request, res: Response, next: NextFunction) => {
 
     const week4Q5Response = week4Question5Responses(week4Query);
 
-    return res.send(week4Q5Response);
+    // temp code , left to manage
+    await pdfGenerate({
+      htmlContent: chapterOneDocumentGenerator(),
+      fileName: "chapter_1",
+    });
+
+    const outputFile = fs.readFileSync("output.pdf");
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader("Content-Disposition", `attachment; filename=output.pdf`);
+    res.status(200).send(outputFile);
+    // temp code , left to manage
+    // return res.send(week4Q5Response);
   } catch (e) {
     console.log(e);
     return res.status(500).send(e);

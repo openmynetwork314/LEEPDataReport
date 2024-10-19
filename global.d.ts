@@ -11,6 +11,7 @@ declare global {
       DATABASE_USERNAME: string;
       DATABASE_PASSWORD: string;
       DATABASE_NAME: string;
+      BASE_URL: string;
     }
   }
   namespace Express {
