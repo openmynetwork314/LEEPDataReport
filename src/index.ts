@@ -1,7 +1,9 @@
 import express, { Request, Response, Application, NextFunction } from "express";
 import router from "./routes";
+import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./database/connect";
+import path from "path";
 dotenv.config();
 
 const app: Application = express();
@@ -10,6 +12,7 @@ const port = process.env.PORT || 8003;
 connectDB();
 
 app.use(express.json());
+app.use(cors());
 app.use(router);
 
 //GLOBAL REQUEST USER TYPE
@@ -18,11 +21,6 @@ export interface RequestUser {
   email: string;
 }
 //GLOBAL REQUEST USER TYPE
-
-app.get("/", (req: Request, res: Response, next: NextFunction) => {
-  return res.send("Works🔥🔥🔥🔥🔥");
-});
-
 const start = async () => {
   try {
     app.listen(port, () => {

@@ -1,8 +1,8 @@
-import express from "express";
+import express, { Request, Response, NextFunction } from "express";
 import reportRouter from "./report/report.routes";
 
 const router = express.Router();
 
-router.use("/reports", reportRouter);
+router.use("/report", reportRouter);
 
 export default router;

@@ -99,8 +99,6 @@ router.get("/", async (req: Request, res: Response, next: NextFunction) => {
     res.setHeader("Content-Type", "application/pdf");
     res.setHeader("Content-Disposition", `attachment; filename=output.pdf`);
     res.status(200).send(outputFile);
-    // temp code , left to manage
-    // return res.send(week4Q5Response);
   } catch (e) {
     console.log(e);
     return res.status(500).send(e);
