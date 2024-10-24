@@ -3,3 +3,4 @@ node_modules
 dist
 output.pdf
 src/lib/resources/chapter1/images
+src/lib/resources/chapter1/__MACOSX
