@@ -1,4 +1,9 @@
-export const chapterOneDocumentGenerator = (): string => {
+import { IFinalResponse } from "../../../types/surveyResponse";
+
+export const chapterOneDocumentGenerator = ({
+  year,
+  schoolName,
+}: IFinalResponse): string => {
   const globalImagePath = `${process.env.BASE_URL}/src/lib/resources/chapter1/images`;
 
   return `
@@ -431,7 +436,7 @@ export const chapterOneDocumentGenerator = (): string => {
 
                     <div class="data_div_bottom">
                         <h1>SCHOOL NAME</h1>
-                        <h1>SCHOOL YEAR 20XX|20XX</h1>
+                        <h1>SCHOOL YEAR ${year}|${year}</h1>
                     </div>
 
                 </div>

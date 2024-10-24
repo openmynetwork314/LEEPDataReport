@@ -5,7 +5,7 @@ import { week1All, week1Filter } from "../../queries/week1";
 import week2 from "../../queries/week2";
 import week3 from "../../queries/week3";
 import week4 from "../../queries/week4";
-import { SurveyResponse } from "../../types/surveyResponse";
+import { IFinalResponse, SurveyResponse } from "../../types/surveyResponse";
 import {
   week1Question1Responses,
   calculateAverageConfidence,
@@ -89,9 +89,15 @@ router.get("/", async (req: Request, res: Response, next: NextFunction) => {
 
     const week4Q5Response = week4Question5Responses(week4Query);
 
+    const finalValueObject: IFinalResponse = {
+      year: "2024",
+      schoolName: "from id",
+      monthlyAverage: 45,
+    };
+
     // temp code , left to manage
     await pdfGenerate({
-      htmlContent: chapterOneDocumentGenerator(),
+      htmlContent: chapterOneDocumentGenerator(finalValueObject),
       fileName: "chapter_1",
     });
 

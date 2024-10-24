@@ -11,3 +11,9 @@ export interface SurveyResponse {
   "Question 5 Response": string;
   "Question 6 Response"?: string;
 }
+
+export interface IFinalResponse {
+  year: string;
+  schoolName: string;
+  monthlyAverage: number | string;
+}
