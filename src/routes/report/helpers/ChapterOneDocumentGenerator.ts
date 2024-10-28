@@ -3,6 +3,41 @@ import { IFinalResponse } from "../../../types/surveyResponse";
 export const chapterOneDocumentGenerator = ({
   year,
   schoolName,
+  averageAll,
+  averageSchool,
+  weekOneQ5OptionOne,
+  weekOneQ5OptionTwo,
+  weekOneQ5OptionThree,
+  weekOneQ5OptionFour,
+  weekOneQ5OptionFive,
+  cheerOne ,
+  cheerTwo,
+  fearOne,
+  fearTwo,
+  weekTwoQ6OptionOne,
+  weekTwoQ6OptionTwo,
+  weekTwoQ6OptionThree,
+  weekTwoQ6OptionFour,
+  weekTwoQ6OptionFive,
+  weekFourQ1OptionOne ,
+  weekFourQ1OptionTwo ,
+  weekFourQ1OptionThree,
+  weekFourQ1OptionFour,
+  weekFourQ1OptionFive,
+  weekFourQ2OptionOne,
+  weekFourQ2OptionTwo,
+  weekFourQ2OptionThree,
+  weekFourQ2OptionFour,
+  weekFourQ2OptionFive,
+  weekFourQ5OptionOne,
+  weekFourQ5OptionTwo,
+  weekFourQ5OptionThree,
+  weekFourQ5OptionFour,
+  weekFourQ5OptionFive,
+  recommendationOne,
+  recommendationTwo,
+  recommendationThree,
+  recommendationFour,
 }: IFinalResponse): string => {
   const globalImagePath = `${process.env.BASE_URL}/src/lib/resources/chapter1/images`;
 
@@ -430,12 +465,12 @@ export const chapterOneDocumentGenerator = ({
                 <div class="data_div">
 
                     <div class="data_div_top">
-                        <h1>CHAPTER X REPORT</h1>
+                        <h1>CHAPTER 1 REPORT</h1>
                         <h3>LEEP XTH GRADE</h3>
                     </div>
 
                     <div class="data_div_bottom">
-                        <h1>SCHOOL NAME</h1>
+                        <h1>${schoolName}</h1>
                         <h1>SCHOOL YEAR ${year}|${year}</h1>
                     </div>
 
@@ -620,7 +655,7 @@ export const chapterOneDocumentGenerator = ({
                 <div class="mainFooter">
 
                     <div class="name">
-                        SCHOOL NAME
+                        ${schoolName}
                     </div>
 
                     <div class="photoText"
@@ -661,13 +696,13 @@ export const chapterOneDocumentGenerator = ({
                         <img src="${globalImagePath}/p3_1.png" width="50%">
 
                         <div style="font-weight: bold;">LEEP SCHOOLS THIS YEAR</div>
-                        <div style="font-weight: bold;">(20XX)</div>
+                        <div style="font-weight: bold;">(${year})</div>
 
                         <div style="text-align: center;">
                             On average, students across LEEP schools rated their confidence and support level
                         </div>
 
-                        <div style="font-weight: bold;">X</div>
+                        <div style="font-weight: bold;">${averageAll}</div>
 
                     </div>
 
@@ -675,13 +710,13 @@ export const chapterOneDocumentGenerator = ({
                         <img src="${globalImagePath}/p3_2.png" width="50%">
 
                         <div style="font-weight: bold;">FEELING FROM YOUR STUDENTS </div>
-                        <div style="font-weight: bold;">(20XX)</div>
+                        <div style="font-weight: bold;">(${year})</div>
 
                         <div style="text-align: center;">
                             On average, your students rated their confidence and support level
                         </div>
 
-                        <div style="font-weight: bold;">X</div>
+                        <div style="font-weight: bold;">${averageSchool}</div>
 
                     </div>
 
@@ -701,7 +736,7 @@ export const chapterOneDocumentGenerator = ({
                 <div class="mainFooter">
 
                     <div class="name">
-                        SCHOOL NAME
+                        ${schoolName}
                     </div>
 
                     <div class="photoText"
@@ -744,27 +779,27 @@ export const chapterOneDocumentGenerator = ({
                 <div class="studentReview">
                     <div class="eachReview">
                         <div> NOT HAPPY WITH IT</div>
-                        <div>X</div>
+                        <div>${weekOneQ5OptionOne}%</div>
                     </div>
 
                     <div class="eachReview">
                         <div> SOMEWHAT DISAPPOINTED</div>
-                        <div>X</div>
+                        <div>${weekOneQ5OptionTwo}%</div>
                     </div>
 
                     <div class="eachReview">
                         <div> NEUTRAL </div>
-                        <div>X</div>
+                        <div>${weekOneQ5OptionThree}%</div>
                     </div>
 
                     <div class="eachReview">
                         <div> MET MY EXPECTATION </div>
-                        <div>X</div>
+                        <div>${weekOneQ5OptionFour}%</div>
                     </div>
 
                     <div class="eachReview">
                         <div> EXCEEDED MY EXPECTATION</div>
-                        <div>X</div>
+                        <div>${weekOneQ5OptionFive}%</div>
                     </div>
 
 
@@ -775,7 +810,7 @@ export const chapterOneDocumentGenerator = ({
                 <div class="mainFooter">
 
                     <div class="name">
-                        SCHOOL NAME
+                        ${schoolName}
                     </div>
 
                     <div class="photoText"
@@ -816,7 +851,7 @@ export const chapterOneDocumentGenerator = ({
                                 CHEER #1
                             </div>
                             <div>
-                                xxxxxxx
+                                ${cheerOne}
                             </div>
                         </div>
 
@@ -825,7 +860,7 @@ export const chapterOneDocumentGenerator = ({
                                 CHEER #2
                             </div>
                             <div>
-                                xxxxxxx
+                                ${cheerTwo}
                             </div>
                         </div>
 
@@ -835,25 +870,25 @@ export const chapterOneDocumentGenerator = ({
                     <div class="textFlex">
                         <div class="mainSixthText">
                             <div>
-                                CHEER #1
+                                FEAR #1
                             </div>
                             <div>
-                                xxxxxxx
+                                ${fearOne}
                             </div>
                         </div>
 
                         <div class="mainSixthText">
                             <div>
-                                CHEER #2
+                                FEAR #2
                             </div>
                             <div>
-                                xxxxxxx
+                                ${fearTwo}
                             </div>
                         </div>
 
                     </div>
                     <div style="padding-left: 10rem; font-size: x-small;">
-                        SCHOOL NAME|TEACHER NAME
+                        ${schoolName}|TEACHER NAME
                     </div>
 
                 </div>
@@ -878,31 +913,31 @@ export const chapterOneDocumentGenerator = ({
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p7_1.png" width="100%">
                         <div>FAMILY MEMBERS OR GUARDIANS </div>
-                        <div id="seventhPercentage">X%</div>
+                        <div id="seventhPercentage">${weekTwoQ6OptionOne}%</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p7_2.png" width="100%">
                         <div>FRIENDS OR PEERS ATTENDING THE SAME SCHOOL </div>
-                        <div id="seventhPercentage">X%</div>
+                        <div id="seventhPercentage">${weekTwoQ6OptionTwo}%</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p7_3.png" width="100%">
                         <div>INSPIRATIONAL TEACHERS, MENTORS, SCHOOL STAFF </div>
-                        <div id="seventhPercentage">X%</div>
+                        <div id="seventhPercentage">${weekTwoQ6OptionThree}%</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p7_4.png" width="100%">
                         <div>PERSONAL GOALS AND ASPIRATIONS </div>
-                        <div id="seventhPercentage">X%</div>
+                        <div id="seventhPercentage">${weekTwoQ6OptionFour}%</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p7_5.png" width="100%">
                         <div>PERSONAL EXPERIENCES OR CHALLENGES </div>
-                        <div id="seventhPercentage">X%</div>
+                        <div id="seventhPercentage">${weekTwoQ6OptionFive}%</div>
                     </div>
 
                 </div>
@@ -910,7 +945,7 @@ export const chapterOneDocumentGenerator = ({
                 <div class="mainFooter">
 
                     <div class="name">
-                        SCHOOL NAME | TEACHER NAME
+                        ${schoolName} | TEACHER NAME
                     </div>
 
                     <div class="photoText"
@@ -942,38 +977,38 @@ export const chapterOneDocumentGenerator = ({
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p7_1.png" width="100%">
                         <div>FAMILY MEMBERS OR GUARDIANS </div>
-                        <div id="seventhPercentage">X%</div>
+                        <div id="seventhPercentage">${weekTwoQ6OptionOne}%</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p7_2.png" width="100%">
                         <div>FRIENDS OR PEERS ATTENDING THE SAME SCHOOL </div>
-                        <div id="seventhPercentage">X%</div>
+                        <div id="seventhPercentage">${weekTwoQ6OptionTwo}%</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p7_3.png" width="100%">
                         <div>INSPIRATIONAL TEACHERS, MENTORS, SCHOOL STAFF </div>
-                        <div id="seventhPercentage">X%</div>
+                        <div id="seventhPercentage">${weekTwoQ6OptionThree}%</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p7_4.png" width="100%">
                         <div>PERSONAL GOALS AND ASPIRATIONS </div>
-                        <div id="seventhPercentage">X%</div>
+                        <div id="seventhPercentage">${weekTwoQ6OptionFour}%</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p7_5.png" width="100%">
                         <div>PERSONAL EXPERIENCES OR CHALLENGES </div>
-                        <div id="seventhPercentage">X%</div>
+                        <div id="seventhPercentage">${weekTwoQ6OptionFive}%</div>
                     </div>
 
                 </div>
 
                 <div class="mainFooter">
                     <div class="name">
-                        SCHOOL NAME | TEACHER NAME
+                        ${schoolName} | TEACHER NAME
                     </div>
 
                     <div class="photoText"
@@ -1026,7 +1061,7 @@ export const chapterOneDocumentGenerator = ({
 
                         <div class="tenthText">
                             <div id="tenthBoldText">
-                                % of Students
+                                ${weekFourQ2OptionOne}% of Students
                             </div>
                             <div>
                                 plan to get to know teachers and counselors better to help them succeed in high school
@@ -1035,7 +1070,7 @@ export const chapterOneDocumentGenerator = ({
 
                         <div class="tenthText">
                             <div id="tenthBoldText">
-                                % of Students
+                                ${weekFourQ2OptionThree}% of Students
                             </div>
                             <div>
                                 Identifying habits, they think they need to change or improve to help them succeed in
@@ -1044,7 +1079,7 @@ export const chapterOneDocumentGenerator = ({
 
                         <div class="tenthText">
                             <div id="tenthBoldText">
-                                % of Students
+                                ${weekFourQ2OptionFive}% of Students
                             </div>
                             <div>
                                 Exploring extracurricular activities outside the classroom they are you interested in,
@@ -1060,7 +1095,7 @@ export const chapterOneDocumentGenerator = ({
 
                         <div class="tenthText">
                             <div id="tenthBoldText">
-                                % of Students
+                                ${weekFourQ2OptionTwo}% of Students
                             </div>
                             <div>
                                 Plan to organize and focus on study plan that will help them succeed in high school
@@ -1069,7 +1104,7 @@ export const chapterOneDocumentGenerator = ({
 
                         <div class="tenthText">
                             <div id="tenthBoldText">
-                                % of Students
+                                ${weekFourQ2OptionFour}% of Students
                             </div>
                             <div>
                                 Not certain or haven't thought seriously about their plans for high school success yet
@@ -1083,7 +1118,7 @@ export const chapterOneDocumentGenerator = ({
                 </div>
                 <div class="mainFooter">
                     <div class="name">
-                        SCHOOL NAME | TEACHER NAME
+                        ${schoolName} | TEACHER NAME
                     </div>
 
                     <div class="photoText"
@@ -1119,35 +1154,35 @@ export const chapterOneDocumentGenerator = ({
                         <div>RELATIONSHIPS </div>
                         <div>Building relationships with the school community (teachers, counselors, classmates etc.)
                         </div>
-                        <div id="seventhPercentage">X% of Students</div>
+                        <div id="seventhPercentage">${weekFourQ1OptionOne}% of Students</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p11_2.png" width="100%">
                         <div> PLANNING </div>
                         <div>Developing effective study and time management plans </div>
-                        <div id="seventhPercentage">X% of Students</div>
+                        <div id="seventhPercentage">${weekFourQ1OptionTwo}% of Students</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p11_3.png" width="100%">
                         <div>CHANGE</div>
                         <div>Breaking old habits and managing all this new change </div>
-                        <div id="seventhPercentage">X% of Students</div>
+                        <div id="seventhPercentage">${weekFourQ1OptionThree}% of Students</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p11_4.png" width="100%">
                         <div>FOCUS</div>
                         <div>Becoming or staying organized and focus on success in each grade </div>
-                        <div id="seventhPercentage">X% of Students</div>
+                        <div id="seventhPercentage">${weekFourQ1OptionFour}% of Students</div>
                     </div>
 
                     <div class="seventhImageAndText">
                         <img src="${globalImagePath}/p11_5.png" width="100%">
                         <div>AWARENESS</div>
                         <div>Identifying and participating in extracurricular activities outside of the classroom </div>
-                        <div id="seventhPercentage">X% of Students</div>
+                        <div id="seventhPercentage">${weekFourQ1OptionFive}% of Students</div>
                     </div>
 
                 </div>
@@ -1155,7 +1190,7 @@ export const chapterOneDocumentGenerator = ({
                 <div class="mainFooter">
 
                     <div class="name">
-                        SCHOOL NAME | TEACHER NAME
+                        ${schoolName} | TEACHER NAME
                     </div>
 
                     <div class="photoText"
@@ -1186,27 +1221,27 @@ export const chapterOneDocumentGenerator = ({
                 <div class="studentReview">
                     <div class="eachReview">
                         <div>POOR</div>
-                        <div>% FOR ANSWER A</div>
+                        <div>${weekFourQ5OptionOne}% FOR ANSWER A</div>
                     </div>
 
                     <div class="eachReview">
                         <div>BELOW AVERAGE</div>
-                        <div>% FOR ANSWER B</div>
+                        <div>${weekFourQ5OptionTwo}%  FOR ANSWER B</div>
                     </div>
 
                     <div class="eachReview">
                         <div> AVERAGE </div>
-                        <div>% FOR ANSWER C</div>
+                        <div>${weekFourQ5OptionThree}%  FOR ANSWER C</div>
                     </div>
 
                     <div class="eachReview">
                         <div> ABOVE AVERAGE </div>
-                        <div>% FOR ANSWER D</div>
+                        <div>${weekFourQ5OptionFour}% FOR ANSWER D</div>
                     </div>
 
                     <div class="eachReview">
                         <div> EXCELLENT</div>
-                        <div>% FOR ANSWER E</div>
+                        <div>${weekFourQ5OptionFive}%  FOR ANSWER E</div>
                     </div>
 
 
@@ -1238,7 +1273,7 @@ export const chapterOneDocumentGenerator = ({
                                 RECOMMENDATION 1
                             </div>
                             <div>
-                                Green marketing is a practice whereby companies seek to go above.
+                                ${recommendationOne}
                             </div>
                         </div>
 
@@ -1248,7 +1283,8 @@ export const chapterOneDocumentGenerator = ({
                                 RECOMMENDATION 3
                             </div>
                             <div>
-                                Green marketing is a practice whereby companies seek to go above. </div>
+                                ${recommendationTwo}   
+                            </div>
                         </div>
 
                     </div>
@@ -1261,7 +1297,8 @@ export const chapterOneDocumentGenerator = ({
                             <div id="tenthBoldText">
                                 RECOMMENDATION 2 </div>
                             <div>
-                                Green marketing is a practice whereby companies seek to go above. </div>
+                                ${recommendationThree}     
+                            </div>
                         </div>
 
                         <div class="tenthText">
@@ -1269,7 +1306,8 @@ export const chapterOneDocumentGenerator = ({
                                 RECOMMENDATION 4
                             </div>
                             <div>
-                                Green marketing is a practice whereby companies seek to go above. </div>
+                                ${recommendationFour} 
+                            </div>
                         </div>
 
 
@@ -1280,7 +1318,7 @@ export const chapterOneDocumentGenerator = ({
                 </div>
                 <div class="mainFooter">
                     <div class="name">
-                        SCHOOL NAME | TEACHER NAME
+                        ${schoolName} | TEACHER NAME
                     </div>
 
                     <div class="photoText"
