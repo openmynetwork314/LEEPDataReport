@@ -3,7 +3,6 @@ import router from "./routes";
 import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./database/connect";
-import path from "path";
 dotenv.config();
 
 const app: Application = express();
@@ -14,6 +13,13 @@ connectDB();
 app.use(express.json());
 app.use(cors());
 app.use(router);
+
+app.set("views", "./templates");
+app.set("view engine", "ejs");
+
+app.get("/", (req: Request, res: Response, next: NextFunction) => {
+  return res.render("home");
+});
 
 //GLOBAL REQUEST USER TYPE
 export interface RequestUser {
