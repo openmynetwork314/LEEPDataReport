@@ -10,7 +10,7 @@ export const chapterOneDocumentGenerator = ({
   weekOneQ5OptionThree,
   weekOneQ5OptionFour,
   weekOneQ5OptionFive,
-  cheerOne ,
+  cheerOne,
   cheerTwo,
   fearOne,
   fearTwo,
@@ -19,8 +19,8 @@ export const chapterOneDocumentGenerator = ({
   weekTwoQ6OptionThree,
   weekTwoQ6OptionFour,
   weekTwoQ6OptionFive,
-  weekFourQ1OptionOne ,
-  weekFourQ1OptionTwo ,
+  weekFourQ1OptionOne,
+  weekFourQ1OptionTwo,
   weekFourQ1OptionThree,
   weekFourQ1OptionFour,
   weekFourQ1OptionFive,
@@ -303,6 +303,12 @@ export const chapterOneDocumentGenerator = ({
         align-items: center;
     }
 
+    .eachReview> :first-child {
+        font-size: 0.8rem;
+        font-weight: bold;
+        height: 1rem;
+    }
+
     /*Fifth Page CSS ends here*/
 
 
@@ -373,6 +379,11 @@ export const chapterOneDocumentGenerator = ({
         text-align: center;
         row-gap: 1rem;
     }
+        
+    .seventhImageAndText> :nth-child(2) {
+        height: 4rem;
+    }
+
 
     /* Page 7 and 8 CSS ends here */
 
