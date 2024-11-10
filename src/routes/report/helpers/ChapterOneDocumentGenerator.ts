@@ -1153,7 +1153,7 @@ export const chapterOneDocumentGenerator = ({
     <div class="pageWrapper">
         <div class="page">
 
-            <div class="seventhPageFlex">
+        <div style="margin-top:1.5rem" class="seventhPageFlex">
                 <div style="font-size: 1.5rem; font-weight: bold;">
                     Here’s the aspect your students anticipate needing the most support in to be successful in high
                     school: </div>

@@ -28,6 +28,8 @@ export const week1Question1Responses = (
   });
 
   // Convert counts to an array of key-value pairs
+  console.log(Object.entries(counts) as [string, number][]);
+
   return Object.entries(counts) as [string, number][];
 };
 
