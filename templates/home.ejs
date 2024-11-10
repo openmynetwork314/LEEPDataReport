@@ -80,28 +80,7 @@
     report_button.addEventListener("click", () => {
       download_report.innerText = "Loading...";
       window.location.href = "/report"
-      // axios.get("/reports").then((response) => {
-      //   console.log(response);
-      //   const fileUrl = window.URL.createObjectURL(new Blob([response.data], { type: 'application/pdf' }));
 
-      //   // Create a temporary link to trigger the download
-      //   const link = document.createElement('a');
-      //   link.href = fileUrl;
-      //   link.setAttribute('download', 'output.pdf'); // Specify the file name
-
-      //   // Append the link to the body and trigger the click event
-      //   document.body.appendChild(link);
-      //   link.click();
-
-      //   // Clean up: Remove the link from the DOM
-      //   document.body.removeChild(link);
-
-      // }).catch((error) => {
-      //   console.log(error);
-      // })
-      //   .finally(() => {
-      //     download_report.innerText = "Download Report"
-      //   })
     });
   </script>
 </body>
