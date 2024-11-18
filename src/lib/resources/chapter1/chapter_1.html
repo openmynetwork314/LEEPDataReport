@@ -420,6 +420,54 @@
     #seventeenth {
         row-gap: 10rem;
     }
+
+    .thirteenthPageDiv {
+        width: 100% !important;
+        height: 100%;
+
+    }
+
+    .thirteenthPageDiv div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .thirteenthPageDiv_Question {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+    }
+
+    .grid-container {
+        width: 100% !important;
+        height: 80% !important;
+        display: grid !important;
+        grid-template-columns: repeat(3, 33.33%) !important;
+        grid-template-rows: repeat(3, 33.33%) !important;
+        gap: 1px;
+    }
+
+    .grid-item {
+        color: white;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        font-size: 12px;
+
+    }
+
+    .grid-item span {
+        font-size: 1.5rem;
+    }
+
+    .grid-item p {
+        text-align: center;
+    }
 </style>
 
 <body>
@@ -1179,6 +1227,8 @@
 
             <div class="fifthPageFlex">
 
+
+
                 <div style="font-size: x-large; font-weight: bold;"> Here’s how your students rate their overall
                     experience within their first <span style="color: green;">30</span> days in high school:</div>
 
@@ -1219,6 +1269,238 @@
 
     <!--Page 12 Ends Here-->
 
+    <div class="pageWrapper">
+        <div class="page">
+            <div class="thirteenthPageDiv">
+
+                <div>
+                    <h1> LEEP STUDENT DATA</h1>
+                    <h3> NAVIGATING THE NINE BOX</h3>
+                </div>
+
+                <div>
+                    <img src="./images/nine_box_block.png" width="60%" />
+
+                    <div class="thirteenthPageDiv_Question">
+                        <span>What is the LEEP 9 Box?</span>
+                        <p>
+
+                            An assessment involves plotting students' scores on two axes categorizing them into
+                            different
+                            quadrants based on their school engagement and social-emotional learning
+                        </p>
+
+                        <span>
+
+                            Vertical Axis:
+                        </span>
+                        <ul>
+                            <li>School Engagement</li>
+                            <li>High Engagement</li>
+                            <li>Moderate Engagement</li>
+                            <li>Low Engagement</li>
+                        </ul>
+                        <span>
+                            Horizontal Axis:
+                        </span>
+                        <ul>
+                            <li>
+
+                                Social-Emotional Learning
+                            </li>
+                            <li>
+
+                                High SEL Competence
+                            </li>
+                            <li>
+
+                                Moderate SEL Competence
+                            </li>
+                            <li>
+
+                                Low SEL Competence
+                            </li>
+                        </ul>
+
+
+
+
+                        Survey Data + LEEP Teacher observation = 9 Box
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Page 13 Ends Here-->
+
+    <div class="pageWrapper">
+        <div class="page">
+            <div class="thirteenthPageDiv">
+
+                <div>
+                    <h1> LEEP Nine Box Descriptions
+                    </h1>
+                </div>
+
+                <div class="grid-container">
+                    <!-- first box -->
+                    <div style="background-color: #bbbbbb;" class="grid-item">
+                        <span>
+                            C2
+                        </span>
+                        <p>
+                            Low Engagement, High SEL Competence: Despite low engagement, these students display strong
+                            social-emotional skills. Understanding their disengagement and addressing it could help them
+                            better connect with school activities.
+                        </p>
+                        <span>
+                            8 students, <i>page number 16</i>
+                        </span>
+                    </div>
+
+                    <!-- second box -->
+                    <div style="background-color: #75bda7;" class="grid-item">
+                        <span>
+                            B2
+                        </span>
+                        <p>
+                            Moderate Engagement, High SEL Competence: These students show good social-emotional skills
+                            but might need more active engagement in school. They could potentially benefit from
+                            increased participation and involvement.
+                        </p>
+                        <span>
+                            8 students, <i>page number 16</i>
+                        </span>
+
+                    </div>
+
+                    <!-- third box -->
+                    <div style="background-color: #75bda7;" class="grid-item">
+                        <span>
+                            A2
+                        </span>
+                        <p>
+                            High Engagement, High SEL Competence: These are students who are actively engaged in school
+                            and exhibit strong social-emotional skills. They are likely well-adjusted and thriving in
+                            both academic and personal aspects
+
+                        </p>
+                        <span>
+                            8 students, <i>page number 16</i>
+                        </span>
+
+                    </div>
+
+                    <!-- fourth box -->
+                    <div style="background-color: #80799a;" class="grid-item">
+                        <span>
+                            C1
+                        </span>
+                        <p>
+                            Low Engagement, Moderate SEL Competence: These students are disengaged and may have moderate
+                            social-emotional skills. Exploring the reasons for disengagement and providing targeted
+                            support is crucial.
+
+
+                        </p>
+                        <span>
+                            8 students, <i>page number 16</i>
+                        </span>
+                    </div>
+
+                    <!-- fifth box -->
+                    <div style="background-color: #ffff00;color:black" class="grid-item">
+                        <span>
+                            B1
+                        </span>
+                        <p>
+                            Moderate Engagement, Moderate SEL Competence: Students falling here might have a balanced
+                            approach to both engagement and social-emotional skills. It's important to monitor their
+                            progress and offer support if needed.
+
+                        </p>
+                        <span>
+                            8 students, <i>page number 16</i>
+                        </span>
+                    </div>
+
+                    <!-- sixth box -->
+                    <div style="background-color: #75bda7;" class="grid-item">
+                        <span>
+                            A1
+                        </span>
+                        <p>
+                            High Engagement, Moderate SEL Competence: These students are engaged in school but might
+                            benefit from additional support in developing certain social-emotional skills. They are
+                            motivated, but some areas of emotional intelligence might need attention
+
+
+                        </p>
+                        <span>
+                            8 students, <i>page number 16</i>
+                        </span>
+                    </div>
+
+                    <!-- seventh box -->
+                    <div style="background-color: #c00001;" class="grid-item">
+                        <span>
+                            C0
+                        </span>
+                        <p>
+                            Low Engagement, Low SEL Competence: Students in this quadrant face challenges in both school
+                            engagement and social-emotional skills. Focusing on improving these aspects can have a
+                            positive impact.
+
+                        </p>
+                        <span>
+                            8 students, <i>page number 16</i>
+                        </span>
+                    </div>
+
+
+                    <!-- eighth box -->
+                    <div style="background-color: #00aff0;" class="grid-item">
+                        <span>
+                            B0
+                        </span>
+                        <p>
+                            Moderate Engagement, Low SEL Competence: These students might need assistance in both
+                            engagement and social-emotional development. Tailored interventions can help them improve in
+                            both areas.
+
+
+                        </p>
+                        <span>
+                            8 students, <i>page number 16</i>
+                        </span>
+                    </div>
+
+                    <!-- ninth box -->
+                    <div style="background-color: #266e8b;" class="grid-item">
+                        <span>
+                            A0
+                        </span>
+                        <p>
+                            High Engagement, Low SEL Competence: While engaged in school activities, these students
+                            might struggle with social-emotional skills. It's important to provide guidance and support
+                            to help them navigate emotional challenges.
+
+
+                        </p>
+                        <span>
+                            8 students, <i>page number 16</i>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Page 14 Ends Here-->
 
     <!--Page 17 Starts Here-->
 
