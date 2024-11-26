@@ -1,5 +1,259 @@
 import { IFinalResponse } from "../../../types/surveyResponse";
 
+const includeNineBoxCategoryStudents = (categoryName: string) => {
+  return `
+    <div class="pageWrapper">
+        <div class="page">
+            <div class="thirteenthPageDiv">
+
+                <div>
+                    <h1>
+                        ${categoryName} Students
+                    </h1>
+                </div>
+
+                <div style="display: flex;justify-content: space-between;">
+                   <ol>
+
+                        <li>Sarbagya Gho Shrestha</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                    </ol>
+                   <ol>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                    </ol>
+                   <ol>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                    </ol>
+                    <ol>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                    </ol>
+                    <ol>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                    </ol>
+                    <ol>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+                        <li>Yugal Pariyar</li>
+
+                    </ol>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--Page 15 Ends Here-->
+
+
+  `;
+};
+
 export const chapterOneDocumentGenerator = ({
   year,
   schoolName,
@@ -1399,7 +1653,7 @@ export const chapterOneDocumentGenerator = ({
                             better connect with school activities.
                         </p>
                         <span>
-                            8 students, <i>page number 16</i>
+                            8 students, <i>page number 15</i>
                         </span>
                     </div>
 
@@ -1431,7 +1685,7 @@ export const chapterOneDocumentGenerator = ({
 
                         </p>
                         <span>
-                            8 students, <i>page number 16</i>
+                            8 students, <i>page number 17</i>
                         </span>
 
                     </div>
@@ -1449,7 +1703,7 @@ export const chapterOneDocumentGenerator = ({
 
                         </p>
                         <span>
-                            8 students, <i>page number 16</i>
+                            8 students, <i>page number 18</i>
                         </span>
                     </div>
 
@@ -1465,7 +1719,7 @@ export const chapterOneDocumentGenerator = ({
 
                         </p>
                         <span>
-                            8 students, <i>page number 16</i>
+                            8 students, <i>page number 19</i>
                         </span>
                     </div>
 
@@ -1482,7 +1736,7 @@ export const chapterOneDocumentGenerator = ({
 
                         </p>
                         <span>
-                            8 students, <i>page number 16</i>
+                            8 students, <i>page number 20</i>
                         </span>
                     </div>
 
@@ -1498,7 +1752,7 @@ export const chapterOneDocumentGenerator = ({
 
                         </p>
                         <span>
-                            8 students, <i>page number 16</i>
+                            8 students, <i>page number 21</i>
                         </span>
                     </div>
 
@@ -1516,7 +1770,7 @@ export const chapterOneDocumentGenerator = ({
 
                         </p>
                         <span>
-                            8 students, <i>page number 16</i>
+                            8 students, <i>page number 22</i>
                         </span>
                     </div>
 
@@ -1533,7 +1787,7 @@ export const chapterOneDocumentGenerator = ({
 
                         </p>
                         <span>
-                            8 students, <i>page number 16</i>
+                            8 students, <i>page number 23</i>
                         </span>
                     </div>
                 </div>
@@ -1541,8 +1795,21 @@ export const chapterOneDocumentGenerator = ({
             </div>
         </div>
     </div>
-
+    
     <!--Page 14 Ends Here-->
+
+    ${includeNineBoxCategoryStudents("C2")}
+    ${includeNineBoxCategoryStudents("B2")}
+    ${includeNineBoxCategoryStudents("A2")}
+
+    ${includeNineBoxCategoryStudents("C1")}
+    ${includeNineBoxCategoryStudents("B1")}
+    ${includeNineBoxCategoryStudents("A1")}
+
+    ${includeNineBoxCategoryStudents("C0")}
+    ${includeNineBoxCategoryStudents("B0")}
+    ${includeNineBoxCategoryStudents("A0")}
+
 
 
     <!--Page 17 Starts Here-->
